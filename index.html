@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfólio de Luiz Fernando Ank: estudante de Engenharia de Software, analista de suporte ERP e aspirante a desenvolvedor web."
+      content="Conheça o portfólio de Luiz Fernando Ank, estudante de Engenharia de Software na UTFPR e profissional de suporte técnico ERP. Veja sua trajetória, experiências, projetos e habilidades em tecnologia."
     />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Luiz Fernando Ank" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0d0f" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Luiz Fernando Ank | Portfólio" />
+    <meta
+      property="og:description"
+      content="Portfólio de Luiz Fernando Ank: trajetória, experiência profissional, projetos e habilidades em Engenharia de Software e tecnologia."
+    />
+    <meta property="og:site_name" content="Luiz Fernando Ank — Portfólio" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Luiz Fernando Ank | Portfólio" />
+    <meta
+      name="twitter:description"
+      content="Conheça minha trajetória, experiência profissional, projetos e habilidades em tecnologia."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <title>Luiz Fernando Ank | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Luiz Fernando Ank | Portfólio de Engenharia de Software</title>
   </head>
 
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header id="inicio">
       <p><strong>LUIZANK.exe</strong> | Portfólio pessoal</p>
       <h1>Luiz Fernando Ank</h1>
@@ -41,7 +70,7 @@
       <hr />
     </header>
 
-    <main>
+    <main id="conteudo">
       <section id="perfil" aria-labelledby="titulo-perfil">
         <h2 id="titulo-perfil">🎮 Perfil do jogador</h2>
         <figure>
@@ -50,6 +79,9 @@
             alt="Luiz Fernando Ank em Berlim, na Alemanha"
             width="180"
             height="180"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
           />
           <figcaption>
             Registro de uma das fases mais marcantes da minha jornada: o
@@ -318,8 +350,9 @@
               href="https://github.com/luizank"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub de Luiz Fernando Ank (abre em nova aba)"
             >
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
               GitHub
             </a>
           </li>
@@ -329,8 +362,9 @@
               href="https://www.linkedin.com/in/luiz-fernando-ank-3b6985281/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn de Luiz Fernando Ank (abre em nova aba)"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
               LinkedIn
             </a>
           </li>
@@ -340,8 +374,9 @@
               href="https://www.instagram.com/luiz_ank/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram de Luiz Fernando Ank (abre em nova aba)"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               Instagram
             </a>
           </li>
@@ -350,7 +385,7 @@
         <h3>Enviar uma mensagem</h3>
         <p>Preencha os campos abaixo para preparar sua mensagem.</p>
         <!-- Este formulário é apenas estrutural. Configure um serviço de envio para receber mensagens. -->
-        <form action="#" method="post">
+        <form action="#" method="post" aria-label="Formulário de contato">
           <p>
             <label for="nome">Nome:</label><br />
             <input
@@ -358,6 +393,7 @@
               id="nome"
               name="nome"
               autocomplete="name"
+              placeholder="Seu nome"
               required
             />
           </p>
@@ -368,6 +404,7 @@
               id="email"
               name="email"
               autocomplete="email"
+              placeholder="voce@exemplo.com"
               required
             />
           </p>
@@ -377,6 +414,7 @@
               id="mensagem"
               name="mensagem"
               rows="5"
+              placeholder="Escreva sua mensagem..."
               required
             ></textarea>
           </p>
@@ -396,7 +434,9 @@
     <footer>
       <p><strong>Luiz Fernando Ank</strong> · Desenvolvedor em formação</p>
       <p>Obrigado por explorar meu perfil. A jornada continua!</p>
-      <p><small>© 2026 Luiz Fernando Ank.</small></p>
+      <p>
+        <small>© 2026 Luiz Fernando Ank. Todos os direitos reservados.</small>
+      </p>
       <p><a href="#inicio">↑ Voltar ao início</a></p>
     </footer>
   </body>
